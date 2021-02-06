@@ -16,12 +16,12 @@ pwd_le=driver.find_element_by_name("p")
 print(pwd_le.is_displayed())   #returns true or false depending on status
 print(pwd_le.is_enabled())
 
-user_le.send_keys("11602882")
-pwd_le.send_keys("Jack@786")
+user_le.send_keys("Username")  #enter your username
+pwd_le.send_keys("Password")    #enter your Password
 
-driver.find_element_by_xpath("/html/body/div[2]/div/form/div[7]/button").click()
+driver.find_element_by_xpath("/html/body/div[2]/div/form/div[7]/button").click()  #it will automate login button
 
-driver.find_element_by_xpath("//a[contains(text(),'View Classes/Meetings')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'View Classes/Meetings')]").click()   #will click on view classes/meetingd
 time.sleep(10)
 
 driver.implicitly_wait(5)
